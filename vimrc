@@ -158,3 +158,9 @@ set diffopt+=vertical
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+" Setup macvim
+if has('gui_running')
+  set background=dark
+  set guifont=Monaco:h14
+endif
