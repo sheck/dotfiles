@@ -200,6 +200,10 @@ Shell aliases and scripts:
 * `rk` for `rake`.
 * `tat` to attach to tmux session named the same as the current directory.
 * `v` for `$VISUAL`.
+* `gitblank` create git repo in current dir, add empty 'Init' commit
+* `addbitbucket` creates a bitbucket repo, adds as remote to current directory,
+  and pushes it up
+* `startrepo` creates folder, bitbucket repo, empty init, pushes it up
 
 Thanks
 ------

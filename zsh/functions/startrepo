@@ -1,0 +1,19 @@
+# startrepo - make folder, make it a repo, put it on bitbucket
+function startrepo {
+  echo 'Username?'
+  read username
+  echo 'Password?'
+  read -s password
+  echo 'Repo name?'
+  read reponame
+
+  mkdir $reponame
+  cd $reponame
+  git init
+  git commit —-allow-empty -m "Init"
+
+  curl --user $username:$password https://api.bitbucket.org/1.0/repositories/ --data name=$reponame --data is_private='true'
+  git remote add origin git@bitbucket.org:$username/$reponame.git
+  git push -u origin --all
+  git push -u origin --tags
+}
