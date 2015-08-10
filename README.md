@@ -23,8 +23,9 @@ Install [rcm](https://github.com/thoughtbot/rcm):
     brew tap thoughtbot/formulae
     brew install rcm
 
-Install the dotfiles:
+Install the dotfiles (from repo dir):
 
+    ln -s $PWD ~/dotfiles
     env RCRC=$HOME/dotfiles/rcrc rcup
 
 This command will create symlinks for config files in your home directory.
