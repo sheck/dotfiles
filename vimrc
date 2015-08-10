@@ -116,9 +116,6 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
-" For Macvim
-nnoremap <ScrollWheelUp> :echoe "Use k"<CR>
-nnoremap <ScrollWheelDown> :echoe "Use j"<CR>
 
 " Smooth scroll bindings
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 10, 2)<CR>
@@ -164,11 +161,6 @@ set complete+=kspell
 set diffopt+=vertical
 
 colorscheme seti
-
-" Setup macvim
-if has('gui_running')
-  set guifont=Monaco:h14
-endif
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
