@@ -154,13 +154,14 @@ set complete+=kspell
 " Always use vertical diffs
 set diffopt+=vertical
 
-" Local config
-if filereadable($HOME . "/.vimrc.local")
-  source ~/.vimrc.local
-endif
+colorscheme seti
 
 " Setup macvim
 if has('gui_running')
-  set background=dark
   set guifont=Monaco:h14
+endif
+
+" Local config
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
 endif
