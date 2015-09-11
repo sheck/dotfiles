@@ -166,6 +166,15 @@ set diffopt+=vertical
 
 colorscheme seti
 
+" YouCompleteMe
+let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
+
+" Ultisnips
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
