@@ -174,6 +174,7 @@ let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+let g:UltiSnipsListSnippets="<C-e>"
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
