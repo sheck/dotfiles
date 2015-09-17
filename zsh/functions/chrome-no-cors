@@ -1,0 +1,4 @@
+# launch chrome and disable cors (for development)
+function chrome-no-cors {
+  open /Applications/Google\ Chrome.app --args --disable-web-security
+}
