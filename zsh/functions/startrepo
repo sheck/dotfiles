@@ -10,7 +10,7 @@ function startrepo {
   mkdir $reponame
   cd $reponame
   git init
-  git commit —-allow-empty -m "Init"
+  git commit --allow-empty -m "Init"
 
   curl --user $username:$password https://api.bitbucket.org/1.0/repositories/ --data name=$reponame --data is_private='true'
   git remote add origin git@bitbucket.org:$username/$reponame.git
