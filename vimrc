@@ -160,6 +160,10 @@ set diffopt+=vertical
 
 " colorscheme seti
 
+set background=dark
+let g:solarized_termtrans=1
+colorscheme solarized
+
 " YouCompleteMe
 let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
