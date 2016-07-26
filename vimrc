@@ -158,7 +158,7 @@ set complete+=kspell
 " Always use vertical diffs
 set diffopt+=vertical
 
-colorscheme seti
+" colorscheme seti
 
 " YouCompleteMe
 let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
