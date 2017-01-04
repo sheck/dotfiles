@@ -9,6 +9,7 @@ brew 'postgresql', restart_service: true
 brew 'rbenv'
 brew 'rbenv-binstubs'
 brew 'exercism'
+brew 'node'
 
 cask 'atom'
 cask 'dash'
