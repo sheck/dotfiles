@@ -28,6 +28,7 @@ cask 'google-chrome'
 cask 'kitematic'
 cask 'licecap'
 cask 'ngrok'
+cask 'omnifocus-clip-o-tron'
 
 mas 'OmniFocus', id: 867299399
 mas 'Kindle', id: 405399194
