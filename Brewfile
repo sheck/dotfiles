@@ -17,7 +17,6 @@ cask 'github-desktop'
 cask 'slack'
 cask 'spectacle'
 
-cask 'balsamiq-mockups'
 cask 'caffeine'
 cask 'docker'
 cask 'dropbox'
