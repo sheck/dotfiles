@@ -14,7 +14,6 @@ brew 'node'
 cask 'atom'
 cask 'dash'
 cask 'github-desktop'
-cask 'parallels-desktop'
 cask 'slack'
 cask 'spectacle'
 
