@@ -7,7 +7,6 @@ brew 'mas'
 brew 'thoughtbot/formulae/rcm'
 brew 'postgresql', restart_service: true
 brew 'rbenv'
-brew 'rbenv-binstubs'
 brew 'exercism'
 brew 'node'
 
@@ -26,6 +25,9 @@ cask 'kitematic'
 cask 'licecap'
 cask 'ngrok'
 cask 'omnifocus-clip-o-tron'
+
+# PCO
+cask 'viscosity'
 
 mas 'OmniFocus', id: 867299399
 mas 'Kindle', id: 405399194
