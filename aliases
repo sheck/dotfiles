@@ -8,6 +8,7 @@ alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
 
 # Bundler
 alias b="bundle"
+alias bib="bundle install --binstubs .bundle/bin && rbenv rehash"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
