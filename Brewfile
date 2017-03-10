@@ -5,6 +5,7 @@ tap 'thoughtbot/formulae'
 
 brew 'mas'
 brew 'thoughtbot/formulae/rcm'
+brew 'the_silver_searcher'
 brew 'postgresql', restart_service: true
 brew 'rbenv'
 brew 'exercism'
