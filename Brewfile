@@ -18,6 +18,7 @@ cask 'slack'
 cask 'spectacle'
 
 cask 'caffeine'
+cask 'day-o'
 cask 'docker'
 cask 'dropbox'
 cask 'flux'
