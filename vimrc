@@ -121,6 +121,10 @@ nnoremap <silent> <Leader>l :TestLast<CR>
 nnoremap <silent> <Leader>a :TestSuite<CR>
 nnoremap <silent> <leader>gt :TestVisit<CR>
 
+" Super deluxe jest testing
+nnoremap <silent> <leader>j :!jest --findRelatedTests %:p<cr>
+nnoremap <silent> <leader>e :!jest<cr>
+
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<space>
 
