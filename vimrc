@@ -123,7 +123,8 @@ nnoremap <silent> <leader>gt :TestVisit<CR>
 
 " Super deluxe jest testing
 nnoremap <silent> <leader>j :w\|:!jest --findRelatedTests %:p<cr>
-nnoremap <silent> <leader>e :w\|:!jest<cr>
+nnoremap <silent> <leader>e :w\|:!jest -o<cr>
+nnoremap <silent> <leader>A :w\|:!jest<cr>
 
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<space>
