@@ -1,0 +1,24 @@
+#!/bin/bash
+
+function new_tab() {
+  TAB_NAME=$1
+  COMMAND=$2
+  osascript \
+    -e "tell application \"Terminal\"" \
+    -e "tell application \"System Events\" to keystroke \"t\" using {command down}" \
+    -e "do script \"printf '\\\e]1;$TAB_NAME\\\a'; $COMMAND\" in front window" \
+    -e "end tell" > /dev/null
+}
+
+app_dir="Code/check-ins"
+
+new_tab "Log" "cd ~/$app_dir; tail -f tail -f log/development.log"
+new_tab "Honcho" "cd ~/$app_dir/../all-the-procfiles; honcho --ui"
+
+if [[ $1 == "r" ]]; then
+  new_tab "Sneakers" "cd ~/$app_dir; rake sneakers:run"
+  new_tab "Registations Sneakers" "cd ~/Code/registrations; rake sneakers:run"
+fi
+
+cd ~
+cd $app_dir
