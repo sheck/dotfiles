@@ -58,6 +58,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'moll/vim-node'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
