@@ -9,6 +9,7 @@ brew 'the_silver_searcher'
 brew 'postgresql', restart_service: true
 brew 'rbenv'
 brew 'exercism'
+brew 'neovim'
 brew 'node'
 
 cask 'atom'
