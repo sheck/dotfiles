@@ -39,13 +39,6 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="robbyrussell"
-source $ZSH/oh-my-zsh.sh
-DISABLE_AUTO_UPDATE=true
-DISABLE_UPDATE_PROMPT=true
-
 export VISUAL=nvim
 
 # Local config
