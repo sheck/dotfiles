@@ -90,6 +90,10 @@ nnoremap <silent> <leader>c :nohlsearch<CR>
 " Remote pry debuggin
 nnoremap <leader>p :new\|:call termopen('pry-remote')\|:startinsert<CR>
 
+" Rubocop and eslint autofix
+autocmd FileType javascript map <buffer> <leader>r :NeomakeSh!eslint --fix %<CR>:sleep 1<CR>:e<CR>
+autocmd FileType ruby map <buffer> <leader>r :NeomakeSh!rubocop --auto-correct %<CR>:sleep 1<CR>:e<CR>
+
 
 " COLOR TWEAKS
 
