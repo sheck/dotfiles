@@ -91,8 +91,29 @@ nnoremap <silent> <leader>c :nohlsearch<CR>
 nnoremap <leader>p :new\|:call termopen('pry-remote')\|:startinsert<CR>
 
 " Rubocop and eslint autofix
-autocmd FileType javascript map <buffer> <leader>r :NeomakeSh!eslint --fix %<CR>:sleep 1<CR>:e<CR>
-autocmd FileType ruby map <buffer> <leader>r :NeomakeSh!rubocop --auto-correct %<CR>:sleep 1<CR>:e<CR>
+autocmd FileType javascript,javascript.jsx map <buffer> <leader>r :Neomake esfix<CR>
+autocmd FileType ruby map <buffer> <leader>r :Neomake rubofix<CR>
+let g:neomake_ruby_rubofix_maker = {
+      \ 'exe': 'rubocop',
+      \ 'args': ['--auto-correct'],
+      \ 'errorformat': '%f:%l:%c: %m',
+      \ }
+let g:neomake_javascript_esfix_maker = {
+      \ 'exe': 'eslint',
+      \ 'args': ['--fix'],
+      \ 'errorformat': '%f:%l:%c: %m',
+      \ }
+function! MyOnNeomakeJobFinished() abort
+  let context = g:neomake_hook_context
+  if context.jobinfo.maker.name == "rubofix" || context.jobinfo.maker.name == "esfix"
+    checktime
+    Neomake
+  endif
+endfunction
+augroup my_neomake_hooks
+    au!
+    autocmd User NeomakeJobFinished call MyOnNeomakeJobFinished()
+augroup END
 
 
 " COLOR TWEAKS
