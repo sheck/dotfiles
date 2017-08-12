@@ -1,0 +1,36 @@
+# Use Neovim
+export VISUAL=nvim
+export EDITOR=$VISUAL
+
+# Display branch name and dirty status in prompt
+dirty_branch_marker() {
+  [[ $(git status --porcelain 2> /dev/null) ]] && echo " %{$fg_bold[red]%}✗%{$reset_color%}"
+}
+git_prompt_info() {
+  current_branch=$(git current-branch 2> /dev/null)
+  if [[ -n $current_branch ]]; then
+    echo " %{$fg_bold[green]%}$current_branch%{$reset_color%}$(dirty_branch_marker)"
+  fi
+}
+setopt promptsubst
+PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) %# '
+
+# Load PCO CLI
+[ -s ~/Code/pco/bin/pco ] && eval "$(~/Code/pco/bin/pco init -)"
+
+# Make auto-complete case-insensitive
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# Add local node_modules executables (for local eslint & friends)
+PATH="node_modules/.bin:$PATH"
+
+# Add global yarn executables
+PATH="$HOME/.yarn/bin:$PATH"
+
+# Base16 color schemes (only works with iTerm)
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+# Make search up and down work, so partially type and hit up/down to find relevant stuff
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search

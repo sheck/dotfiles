@@ -1,0 +1,5 @@
+# gitblank - create git repo in current dir, add empty 'Init' commit
+function gitblank {
+  git init
+  git commit --allow-empty -m "Init"
+}

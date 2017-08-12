@@ -15,7 +15,7 @@ Install
 
 Clone onto your laptop:
 
-    git clone git://github.com/thoughtbot/dotfiles.git ~/dotfiles
+    git clone git://github.com/sheck/dotfiles.git ~/dotfiles
 
 (Or, [fork and keep your fork
 updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
@@ -55,7 +55,7 @@ any new files in the repository.
 Make your own customizations
 ----------------------------
 
-Create a directory for your personal customizations: 
+Create a directory for your personal customizations:
 
     mkdir ~/dotfiles-local
 
@@ -218,7 +218,9 @@ configuration:
 Shell aliases and scripts:
 
 * `b` for `bundle`.
+* `bib` for bundle install with binstubs
 * `g` with no arguments is `git status` and with arguments acts like `git`.
+* `gitblank` to initialize a git repo with an empty first commit
 * `migrate` for `rake db:migrate && rake db:rollback && rake db:migrate`.
 * `mcd` to make a directory and change into it.
 * `replace foo bar **/*.rb` to find and replace within a given list of files.

@@ -1,0 +1,3 @@
+alias go-pco=". go-pco-script"
+
+alias bib="bundle install --binstubs .bundle/bin && rbenv rehash"
