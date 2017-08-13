@@ -1,6 +1,6 @@
 " Use the current terminal theme for Vim colors
 set background=dark
-colorscheme disco
+colorscheme customdisco
 
 " Clear search highlight
 nnoremap <silent> <leader>c :nohlsearch<CR>
