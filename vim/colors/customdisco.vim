@@ -115,9 +115,9 @@ call <SID>set_colors("CursorIM"     , "NONE"         , "NONE"         , "")
 
 call <SID>set_colors("CursorLineNr" , "NONE"         , s:dim          , "")
 call <SID>set_colors("Directory"    , s:blue         , "NONE"         , "")
-call <SID>set_colors("DiffAdd"      , ""             , s:dimgreen     , "")
-call <SID>set_colors("DiffChange"   , "NONE"         , s:dimcyan      , "")
-call <SID>set_colors("DiffDelete"   , s:red          , s:dimred       , "")
+call <SID>set_colors("DiffAdd"      , s:bg           , s:green        , "")
+call <SID>set_colors("DiffChange"   , s:bg           , s:blue         , "")
+call <SID>set_colors("DiffDelete"   , s:dimtwo       , s:red          , "")
 call <SID>set_colors("DiffText"     , "white"        , s:magenta      , "")
 hi link EndOfBuffer NonText
 call <SID>set_colors("ErrorMsg"     , "white"        , s:red    , "")
@@ -185,7 +185,7 @@ call <SID>set_colors("WildMenu"     , s:green        , "lightgray"    , "")
 
 " Group Names (:h group-name) {{{
 
-call <SID>set_colors("Comment", s:dimtwo, "", "")
+call <SID>set_colors("Comment", s:dim, "", "")
 
 call <SID>set_colors("Constant", s:green, "", "")
 hi link String    Constant
