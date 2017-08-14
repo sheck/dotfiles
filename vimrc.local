@@ -5,6 +5,9 @@ colorscheme customdisco
 " Clear search highlight
 nnoremap <silent> <leader>c :nohlsearch<CR>
 
+" Run interactive
+nnoremap <leader>r :new\|:te<CR>
+
 " Remote pry debugging
 nnoremap <leader>p :new\|:call termopen('pry-remote')\|:startinsert<CR>
 
