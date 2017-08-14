@@ -217,6 +217,7 @@ configuration:
 
 Shell aliases and scripts:
 
+* `addbitbucket` creates remote bitbucket repo, and pushes up to it
 * `b` for `bundle`.
 * `bib` for bundle install with binstubs
 * `g` with no arguments is `git status` and with arguments acts like `git`.
