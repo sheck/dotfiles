@@ -3,15 +3,15 @@ tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'thoughtbot/formulae'
 
+brew 'exercism'
 brew 'mas'
-brew 'thoughtbot/formulae/rcm'
-brew 'the_silver_searcher'
+brew 'neovim'
+brew 'node'
 brew 'postgresql', restart_service: true
 brew 'rbenv'
 brew 'rbenv-binstubs'
-brew 'exercism'
-brew 'neovim'
-brew 'node'
+brew 'thoughtbot/formulae/rcm'
+brew 'the_silver_searcher'
 
 cask 'atom'
 cask 'dash'
@@ -30,5 +30,5 @@ cask 'ngrok'
 # PCO
 cask 'viscosity'
 
-mas 'Noizio', id: 928871589
 mas 'GIFHunter', id: 1031163338
+mas 'Noizio', id: 928871589
