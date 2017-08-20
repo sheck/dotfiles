@@ -25,3 +25,11 @@ let g:test#javascript#jest#file_pattern = '\v^spec/.*spec\.(js|jsx|coffee)$'
 " Rubocop and eslint autofix
 autocmd FileType javascript,javascript.jsx map <buffer> <leader>f :silent !eslint --fix %<CR>:e<CR>
 autocmd FileType ruby map <buffer> <leader>f :silent !rubocop -a %<CR>:e<CR>
+
+" Autocomplete and snippets
+let g:deoplete#enable_at_startup = 1
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" Show US in deoplete window
+call deoplete#custom#source('ultisnips', 'rank', 1000)
