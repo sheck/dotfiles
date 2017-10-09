@@ -20,5 +20,9 @@ if [[ $1 == "r" ]]; then
   new_tab "Registations Sneakers" "cd ~/Code/registrations; rake sneakers:run"
 fi
 
+if [[ $1 == "w" ]]; then
+  new_tab "Webpack" "cd ~/$app_dir; yarn start"
+fi
+
 cd ~
 cd $app_dir
