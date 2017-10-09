@@ -3,7 +3,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'AndrewRadev/splitjoin.vim', { 'for': 'ruby' }
 Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
 
-Plug 'mxw/vim-jsx', { 'for': 'javascript' }
+Plug 'neoclide/vim-jsx-improve', { 'for': 'javascript' }
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
