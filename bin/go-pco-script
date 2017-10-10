@@ -12,15 +12,27 @@ function new_tab() {
 
 app_dir="Code/check-ins"
 
-new_tab "Log" "cd ~/$app_dir; tail -f tail -f log/development.log"
-new_tab "Honcho" "cd ~/$app_dir/../all-the-procfiles; honcho --ui"
+args=`getopt hrw $*`
+set -- $args
+if [ $1 =~ " -h " ]; then
+  echo "Usage: go-pco [options]"
+  echo
+  echo "Options:"
+  echo "[none]  base: check-ins, log, honcho"
+  echo "-h      display this help message"
+  echo "-r      base with sneakers for registrations and check-ins"
+  echo "-w      base with check-ins webpack"
+else
+  new_tab "Log" "cd ~/$app_dir; tail -f tail -f log/development.log"
+  new_tab "Honcho" "cd ~/$app_dir/../all-the-procfiles; honcho --ui"
+fi
 
-if [[ $1 == "r" ]]; then
+if [ $1 =~ " -r " ]; then
   new_tab "Sneakers" "cd ~/$app_dir; rake sneakers:run"
   new_tab "Registations Sneakers" "cd ~/Code/registrations; rake sneakers:run"
 fi
 
-if [[ $1 == "w" ]]; then
+if [ $1 =~ " -w " ]; then
   new_tab "Webpack" "cd ~/$app_dir; yarn start"
 fi
 
