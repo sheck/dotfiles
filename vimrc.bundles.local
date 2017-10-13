@@ -1,6 +1,8 @@
 Plug 'itchyny/lightline.vim'
 
 Plug 'tpope/vim-abolish'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 Plug 'AndrewRadev/splitjoin.vim', { 'for': 'ruby' }
 Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }

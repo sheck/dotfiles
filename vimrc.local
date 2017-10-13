@@ -20,6 +20,11 @@ nnoremap <leader>p :new\|:call termopen('pry-remote')\|:startinsert<CR>
 " Save current file
 map <Leader>w :w<CR>
 
+" Notes
+map <Leader>n :new .notes.md<CR>
+let g:vim_markdown_new_list_item_indent = 2
+autocmd BufRead,BufNewFile .notes.md setlocal nospell
+
 " vim-test config
 let test#strategy = "neovim"
 let g:test#javascript#jasmine#file_pattern = '\v^ahdslfkjhaldfkjhlspec/.*adsfklhjasfdspec\.(js|jsx|coffee)$'

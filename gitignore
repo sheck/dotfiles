@@ -11,3 +11,6 @@ tags
 tmp/**/*
 !tmp/cache/.keep
 *.pyc
+
+# Custom ignores (gitconfig.local doesn't seem to work)
+.notes.md
