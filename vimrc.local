@@ -8,6 +8,9 @@ colorscheme customdisco
 " Clear search highlight
 nnoremap <silent> <leader>h :nohlsearch<CR>
 
+" Search for highlighted word
+vnoremap // y/\V<C-R>"<CR>
+
 " Run interactive
 nnoremap <leader>r :new\|:te<CR>
 
