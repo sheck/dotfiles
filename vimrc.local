@@ -2,7 +2,11 @@
 set mouse=a
 
 " Use the current terminal theme for Vim colors
-set background=dark
+if $USE_LIGHT_BG == "true"
+  set background=light
+else
+  set background=dark
+endif
 colorscheme customdisco
 
 " Clear search highlight
