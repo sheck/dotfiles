@@ -1,4 +1,5 @@
 Plug 'itchyny/lightline.vim'
+Plug 'airblade/vim-gitgutter'
 
 Plug 'tpope/vim-abolish'
 Plug 'godlygeek/tabular'
