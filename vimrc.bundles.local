@@ -17,3 +17,6 @@ Plug 'honza/vim-snippets'
 Plug 'jsit/disco.vim'
 
 " Plug 'chriskempson/base16-vim'
+
+" Open items from quickfix in splits
+Plug 'yssl/QFEnter'
