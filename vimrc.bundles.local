@@ -20,3 +20,5 @@ Plug 'jsit/disco.vim'
 
 " Open items from quickfix in splits
 Plug 'yssl/QFEnter'
+
+Plug 'mattn/emmet-vim', { 'for': ['javascript', 'html', 'css', 'erb'] }
