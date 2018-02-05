@@ -6,7 +6,6 @@ Plug 'yssl/QFEnter'
 
 Plug 'AndrewRadev/splitjoin.vim', { 'for': 'ruby' }
 Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
-Plug 'rlue/vim-fold-rspec', { 'for': 'ruby' }
 
 Plug 'mattn/emmet-vim', { 'for': ['javascript', 'html', 'css', 'erb'] }
 Plug 'neoclide/vim-jsx-improve', { 'for': 'javascript' }
