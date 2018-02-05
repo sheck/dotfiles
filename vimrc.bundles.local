@@ -2,12 +2,13 @@ Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
 
 Plug 'tpope/vim-abolish'
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
+Plug 'yssl/QFEnter'
 
 Plug 'AndrewRadev/splitjoin.vim', { 'for': 'ruby' }
 Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
+Plug 'rlue/vim-fold-rspec', { 'for': 'ruby' }
 
+Plug 'mattn/emmet-vim', { 'for': ['javascript', 'html', 'css', 'erb'] }
 Plug 'neoclide/vim-jsx-improve', { 'for': 'javascript' }
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -15,10 +16,3 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 Plug 'jsit/disco.vim'
-
-" Plug 'chriskempson/base16-vim'
-
-" Open items from quickfix in splits
-Plug 'yssl/QFEnter'
-
-Plug 'mattn/emmet-vim', { 'for': ['javascript', 'html', 'css', 'erb'] }
