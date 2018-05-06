@@ -12,6 +12,7 @@ Plug 'neoclide/vim-jsx-improve', { 'for': 'javascript' }
 
 " Plug 'rhysd/vim-crystal'
 Plug 'tpope/vim-liquid'
+Plug 'illarionvk/liquid-ultisnips', { 'for': 'liquid' }
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
