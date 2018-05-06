@@ -10,7 +10,8 @@ Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
 Plug 'mattn/emmet-vim', { 'for': ['javascript', 'html', 'css', 'erb'] }
 Plug 'neoclide/vim-jsx-improve', { 'for': 'javascript' }
 
-Plug 'rhysd/vim-crystal'
+" Plug 'rhysd/vim-crystal'
+Plug 'tpope/vim-liquid'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
