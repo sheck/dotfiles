@@ -65,3 +65,9 @@ let g:user_emmet_settings = {
 \      'extends' : 'jsx',
 \  },
 \}
+
+" Folding
+set foldmethod=syntax
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
