@@ -25,8 +25,8 @@ nnoremap <leader>c :new\|:call termopen('rails c')\|:startinsert<CR>
 " Remote pry debugging
 nnoremap <leader>p :new\|:call termopen('pry-remote')\|:startinsert<CR>
 
-" Start Guard Sessions
-nnoremap <leader>g :new\|:call termopen('guard')<CR>
+" Open git status
+nnoremap <leader>g :Gstatus<CR>
 
 " Save current file
 map <Leader>w :w<CR>
