@@ -26,7 +26,7 @@ nnoremap <leader>c :new\|:call termopen('rails c')\|:startinsert<CR>
 nnoremap <leader>p :new\|:call termopen('pry-remote')\|:startinsert<CR>
 
 " Open git status
-nnoremap <leader>g :Gstatus<CR>
+nnoremap <leader>gs :Gstatus<CR>
 
 " Save current file
 map <Leader>w :w<CR>
