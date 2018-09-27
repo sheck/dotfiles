@@ -52,13 +52,8 @@ map <leader>f :ALEFix<CR>
 " Allow picking the fixer in each directory
 set exrc
 
-" Autocomplete and snippets
-let g:deoplete#enable_at_startup = 1
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-" Show US in deoplete window
-call deoplete#custom#source('ultisnips', 'rank', 1000)
+let g:ale_completion_enabled = 1
+nnoremap <leader>d :ALEGoToDefinition<CR>
 
 " Open files from quickfix as ctrl-p does
 let g:qfenter_keymap = {}
