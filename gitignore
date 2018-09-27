@@ -12,4 +12,4 @@ tmp/**/*
 !tmp/cache/.keep
 *.pyc
 
-.notes.md
+.notes

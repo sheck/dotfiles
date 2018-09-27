@@ -33,9 +33,8 @@ map <Leader>w :w<CR>
 map <silent> <leader>gr :!chrome-cli reload<cr><cr>
 
 " Notes
-map <Leader>n :new .notes.md<CR>
-let g:vim_markdown_new_list_item_indent = 2
-autocmd BufRead,BufNewFile .notes.md setlocal nospell
+map <Leader>n :new .notes<CR>
+autocmd BufRead,BufNewFile .notes setlocal nospell
 
 " vim-test config
 let test#strategy = "neovim"
