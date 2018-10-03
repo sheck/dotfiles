@@ -51,7 +51,7 @@ map <leader>f :ALEFix<CR>
 " Allow picking the fixer in each directory
 set exrc
 
-let g:ale_completion_enabled = 1
+" let g:ale_completion_enabled = 1
 nnoremap <leader>d :ALEGoToDefinition<CR>
 
 " Neosnippets
