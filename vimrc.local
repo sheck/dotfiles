@@ -54,6 +54,11 @@ set exrc
 " let g:ale_completion_enabled = 1
 nnoremap <leader>d :ALEGoToDefinition<CR>
 
+" Show rubocop rule explanation
+let g:ale_ruby_rubocop_options = '--display-style-guide'
+" mnemonic for go (to) ale detail
+nnoremap <leader>gad :ALEDetail<CR>
+
 " Neosnippets
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
