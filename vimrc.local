@@ -51,13 +51,15 @@ map <leader>f :ALEFix<CR>
 " Allow picking the fixer in each directory
 set exrc
 
-" let g:ale_completion_enabled = 1
 nnoremap <leader>d :ALEGoToDefinition<CR>
 
 " Show rubocop rule explanation
 let g:ale_ruby_rubocop_options = '--display-style-guide'
 " mnemonic for go (to) ale detail
 nnoremap <leader>gad :ALEDetail<CR>
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
 
 " Neosnippets
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
