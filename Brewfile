@@ -10,26 +10,25 @@ brew 'neovim'
 brew 'node'
 brew 'postgresql', restart_service: true
 brew 'rbenv'
-brew 'rbenv-binstubs'
 brew 'thoughtbot/formulae/rcm'
 brew 'the_silver_searcher'
 
 cask 'atom'
+cask 'iterm2'
 cask 'dash'
-cask 'github-desktop'
 cask 'slack'
 cask 'spectacle'
 
 cask 'caffeine'
 cask 'day-o'
-cask 'docker'
-cask 'dropbox'
 cask 'google-chrome'
 cask 'licecap'
 cask 'ngrok'
 
-# PCO
-cask 'viscosity'
-
 mas 'GIFHunter', id: 1031163338
 mas 'Noizio', id: 928871589
+mas '1Password', id: 1333542190
+
+# Work Specific
+cask 'viscosity'
+cask 'docker'
