@@ -33,7 +33,7 @@ module.exports = {
     cursorBlink: false,
 
     // color of the text
-    foregroundColor: '#fff',
+    foregroundColor: '#d4d7d6',
 
     // terminal background color
     // opacity is only supported on macOS
