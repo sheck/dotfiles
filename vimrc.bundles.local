@@ -3,6 +3,7 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'tpope/vim-abolish'
 Plug 'yssl/QFEnter'
+Plug 'scrooloose/nerdtree'
 
 Plug 'AndrewRadev/splitjoin.vim', { 'for': 'ruby' }
 Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
