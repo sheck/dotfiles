@@ -7,8 +7,8 @@ if $USE_LIGHT_BG == "true"
 else
   set background=dark
 endif
-" colorscheme customdisco
-colorscheme disco
+colorscheme customdisco
+" colorscheme disco
 
 " Clear search highlight
 nnoremap <silent> <leader>h :nohlsearch<CR>
