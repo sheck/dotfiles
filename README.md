@@ -28,6 +28,8 @@ Install [rcm](https://github.com/thoughtbot/rcm):
 Install the dotfiles:
 
     env RCRC=$HOME/dotfiles/rcrc rcup
+    
+**Don't forget**: Create ~/.gitconfig.local with your name and email
 
 After the initial installation, you can run `rcup` without the one-time variable
 `RCRC` being set (`rcup` will symlink the repo's `rcrc` to `~/.rcrc` for future
