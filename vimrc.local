@@ -15,7 +15,7 @@ nnoremap <silent> <leader>h :nohlsearch<CR>
 
 " Search for highlighted word
 vnoremap // y/\V<C-R>"<CR>
-vnoremap \\ y:Ag '<C-R>"'<CR>
+vnoremap \\ y:Ag -Q '<C-R>"'<CR>
 
 " Run interactive
 nnoremap <leader>r :new\|:te<CR>
