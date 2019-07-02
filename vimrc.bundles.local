@@ -19,3 +19,5 @@ Plug 'Shougo/neosnippet.vim'
 Plug 'honza/vim-snippets'
 
 Plug 'jsit/disco.vim'
+
+Plug 'rstacruz/vim-xtract'
