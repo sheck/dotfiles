@@ -3,6 +3,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'thoughtbot/formulae'
 
+brew 'autojump'
 brew 'ctags'
 brew 'exercism'
 brew 'mas'
