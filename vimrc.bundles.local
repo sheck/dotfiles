@@ -21,3 +21,6 @@ Plug 'honza/vim-snippets'
 Plug 'jsit/disco.vim'
 
 Plug 'rstacruz/vim-xtract'
+
+Plug 'tpope/vim-markdown'
+Plug 'dkarter/bullets.vim'
