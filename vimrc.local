@@ -34,9 +34,11 @@ map <Leader>w :w<CR>
 map <silent> <leader>gr :!chrome-cli reload<cr><cr>
 
 " Notes
-map <Leader>n :new .notes<CR>
+" map <Leader>n :new .notes<CR>
 " autocmd BufRead,BufNewFile .notes setlocal ft=markdown nospell
-autocmd BufRead,BufNewFile .notes setlocal ft=markdown
+" autocmd BufRead,BufNewFile .notes setlocal ft=markdown
+let g:pad#dir = "~/Library/Mobile Documents/27N4MQEA55~pro~writer/Documents"
+let g:pad#default_file_extension = ".md"
 
 " vim-test config
 let test#strategy = "neovim"

@@ -24,3 +24,4 @@ Plug 'rstacruz/vim-xtract'
 
 Plug 'tpope/vim-markdown'
 Plug 'dkarter/bullets.vim'
+Plug 'fmoralesc/vim-pad'
