@@ -45,7 +45,7 @@ let test#strategy = "neovim"
 let g:test#javascript#jasmine#file_pattern = '\v^ahdslfkjhaldfkjhlspec/.*adsfklhjasfdspec\.(js|jsx|coffee)$'
 let g:test#javascript#jest#file_pattern = '\v^spec/.*spec\.(js|jsx|coffee)$'
 
-nnoremap <leader>rr :new term://rerun -cx --no-notify bin/rspec %\|:startinsert<CR>
+nnoremap <leader>rr :vsplit term://rerun --background --clear --exit --no-notify bin/rspec %<CR>
 
 " Rubocop and eslint autofix
 let g:ale_fixers = {
