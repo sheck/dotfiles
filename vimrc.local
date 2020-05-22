@@ -59,7 +59,7 @@ let g:ale_fixers = {
 \}
 map <leader>f :ALEFix<CR>
 " Allow picking the fixer in each directory
-set exrc
+set secure exrc
 
 " Need to manually enable since it conflicts with rubocop eventually
 let g:ale_linters_ignore = {'ruby': ['standardrb']}
