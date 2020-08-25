@@ -9,12 +9,11 @@ Plug 'AndrewRadev/splitjoin.vim', { 'for': 'ruby' }
 Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
 
 Plug 'mattn/emmet-vim', { 'for': ['javascript', 'html', 'css', 'eruby'] }
-Plug 'neoclide/vim-jsx-improve', { 'for': 'javascript' }
+Plug 'maxmellon/vim-jsx-pretty'
 
 Plug 'rhysd/vim-crystal', { 'for': 'crystal' }
 Plug 'tpope/vim-liquid'
 
-Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
