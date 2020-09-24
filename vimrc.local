@@ -86,6 +86,7 @@ let g:user_emmet_settings = {
 " Nerdtree stuff
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+nmap <leader>nf :NERDTreeFind<CR>
 
 " Folding
 set foldmethod=syntax
