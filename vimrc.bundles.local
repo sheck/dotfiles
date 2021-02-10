@@ -1,3 +1,6 @@
+" Better ALE and COC integration
+let g:ale_disable_lsp = 1
+
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
 
