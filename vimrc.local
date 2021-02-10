@@ -51,20 +51,8 @@ nnoremap <leader>g :vnew\|:call termopen('guard')<CR>
 " Start rerun
 " nnoremap <leader>rr :vsplit term://rerun --background --clear --exit --no-notify bin/rspec %<CR>
 
-" Rubocop and eslint autofix
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['eslint'],
-\   'ruby': ['rubocop'],
-\}
-map <leader>f :ALEFix<CR>
-" Allow picking the fixer in each directory
-set secure exrc
-
 " Need to manually enable since it conflicts with rubocop eventually
 let g:ale_linters_ignore = {'ruby': ['standardrb']}
-
-nnoremap <leader>d :ALEGoToDefinition<CR>
 
 " Show rubocop rule explanation
 let g:ale_ruby_rubocop_options = '--display-style-guide'
